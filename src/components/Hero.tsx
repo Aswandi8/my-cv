@@ -118,7 +118,7 @@ export default function Home() {
 
       <div className="home-img">
         <Image
-          src="/profile.png" // path relatif dari folder public
+          src="./profile.png" // path relatif dari folder public
           alt="My Picture"
           width={300}
           height={300}
