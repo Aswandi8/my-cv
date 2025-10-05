@@ -1,20 +1,21 @@
 "use client";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+import Header from "@/components/Header";
+import HomeSection from "@/components/Hero";
+import About from "@/components/About";
+import Project from "@/components/Project";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
 
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
-
+export default function Page() {
   return (
-    <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition"
-    >
-      {theme === "dark" ? "🌙" : "☀️"}
-    </button>
+    <main className="bg-gray-900 text-white overflow-x-hidden scroll-smooth">
+      <Header />
+      <HomeSection />
+      <About />
+      <Project />
+      <Skills />
+      <Contact />
+    </main>
   );
 }
