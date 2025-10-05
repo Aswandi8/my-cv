@@ -25,7 +25,7 @@ export default function AboutPage() {
       >
         <div className="about-image">
           <Image
-            src="/profile.png"
+            src="./profile.png"
             alt="My Picture"
             width={300}
             height={300}
