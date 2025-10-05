@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio pribadi Wandi — Web Developer & IT Enthusiast. Menampilkan proyek, keahlian, dan kontak.",
   metadataBase: new URL("https://wandi.vercel.app"),
-
+  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     title: "Wandi | Portfolio",
     description:
